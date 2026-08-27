@@ -1,40 +1,37 @@
 # Great Courses
 
-This is a list of high-quality courses that, for one reason or another, didn't make it into the curriculum.
-The most common reasons are that the course isn't available often enough,
-or that there was an alternative that fit better into the curriculum.
+A curated directory of high-signal university lecture series, OpenCourseWare archives, and specialized online courses in Epistemology. These courses provide structured lectures from leading philosophers on foundational debates, social epistemology, confirmation theory, and epistemic cognitive science.
 
-## General Epistemology
+- [Foundational Epistemology & Theory of Knowledge](#foundational-epistemology--theory-of-knowledge)
+- [Social, Political, & Applied Epistemology](#social-political--applied-epistemology)
+- [Philosophy of Science & Scientific Epistemology](#philosophy-of-science--scientific-epistemology)
+- [Epistemic Virtues, Cognitive Science, & Interdisciplinary Perspectives](#epistemic-virtues-cognitive-science--interdisciplinary-perspectives)
 
-Courses | Duration | Effort
-:-- | :--: | :--:
-[Introduction to Philosophy (University of Edinburgh on Coursera)](https://www.coursera.org/learn/philosophy) | 6 weeks | 3–5 hours/week
-[Philosophy, Science and Religion: Science and Philosophy (University of Edinburgh on Coursera)](https://www.coursera.org/learn/philosophy-science-religion-1) | 4 weeks | 2–4 hours/week
+---
 
-## Philosophy of Science
+## Foundational Epistemology & Theory of Knowledge
 
-Courses | Duration | Effort
-:-- | :--: | :--:
-[Philosophy of Science (University of Pennsylvania on Coursera)](https://www.coursera.org/learn/philosophy-of-science) | 4 weeks | 3–5 hours/week
-[Philosophy and the Sciences: Introduction to the Philosophy of Physical Sciences (University of Edinburgh on Coursera)](https://www.coursera.org/learn/philosophy-physical-sciences) | 4 weeks | 2–4 hours/week
+- [Theory of Knowledge (MIT OpenCourseWare / Prof. Caspar Hare & Prof. Agustín Rayo)](https://ocw.mit.edu/courses/24-211-theory-of-knowledge-spring-2014/)
+- [The Epistemic Quest for Truth: Introduction to Epistemology (Coursera / Erasmus University Rotterdam / Dr. Tim De Mey)](https://www.coursera.org/learn/epistemic-quest-for-truth)
+- [Topics in Epistemology: Self-Knowledge (MIT OpenCourseWare / Prof. Alex Byrne)](https://ocw.mit.edu/courses/24-711-topics-in-epistemology-self-knowledge-spring-2006/)
+- [Philosophy for Beginners: Metaphysics and Epistemology (University of Oxford Podcasts / Marianne Talbot)](https://podcasts.ox.ac.uk/series/philosophy-beginners)
+- [Skepticism (Coursera / University of California, Irvine / Prof. Duncan Pritchard)](https://www.coursera.org/learn/skepticism)
 
-## Social and Applied Epistemology
+## Social, Political, & Applied Epistemology
 
-Courses | Duration | Effort
-:-- | :--: | :--:
-[Intellectual Autonomy (University of Glasgow on Coursera)](https://www.coursera.org/learn/intellectual-autonomy) | 4 weeks | 3–5 hours/week
+- [Knowledge-First Social Epistemology (Coursera / University of Glasgow / Prof. Mona Simion)](https://www.coursera.org/learn/knowledge-first-social-epistemology)
+- [Intellectual Autonomy (Coursera / University of Glasgow / Dr. J. Adam Carter)](https://www.coursera.org/learn/intellectual-autonomy)
+- [Introduction to Digital Epistemology (Coursera / University of Glasgow)](https://www.coursera.org/learn/knowledge-first-social-epistemology)
 
-## Broader Philosophical Context
+## Philosophy of Science & Scientific Epistemology
 
-Courses | Duration | Effort
-:-- | :--: | :--:
-[Death (Yale Open Courses)](https://oyc.yale.edu/philosophy/phil-176) | 26 lectures | Self-paced
-[Philosophy and the Science of Human Nature (Yale Open Courses)](https://oyc.yale.edu/philosophy/phil-181) | 26 lectures | Self-paced
+- [Philosophy of Science (Coursera / University of Pennsylvania / Prof. Michael Weisberg)](https://www.coursera.org/learn/philosophy-of-science)
+- [Philosophy and the Sciences: Introduction to the Philosophy of Physical Sciences (Coursera / University of Edinburgh / Dr. Michela Massimi)](https://www.coursera.org/learn/philosophy-physical-sciences)
+- [Philosophy, Science and Religion: Science and Philosophy (Coursera / University of Edinburgh)](https://www.coursera.org/learn/philosophy-science-religion-1)
 
-## Online Learning - Great Courses
+## Epistemic Virtues, Cognitive Science, & Interdisciplinary Perspectives
 
-Courses | Duration | Effort
-:-- | :--: | :--:
-[Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn) | 4 weeks | 2 hours/week
-[Mindshift](https://www.coursera.org/learn/mindshift) | 4 weeks | 2 hours/week
-[Powersearching with Google](https://www.edx.org/learn/google-power-searching/google-power-searching-with-google) | 3 weeks | 4-6 hours/week
+- [Philosophy and the Science of Human Nature (Open Yale Courses / Prof. Tamar Gendler)](https://oyc.yale.edu/philosophy/phil-181)
+- [Intellectual Humility: Theory (Coursera / University of Edinburgh / Prof. Duncan Pritchard)](https://www.coursera.org/learn/intellectual-humility-theory)
+- [Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences (Coursera / University of Edinburgh)](https://www.coursera.org/learn/philosophy-cognitive-sciences)
+- [Minds and Machines (MITx / Prof. Alex Byrne)](https://mitxonline.mit.edu/courses/course-v1:MITxT+24.09x/)
