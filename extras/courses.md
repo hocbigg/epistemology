@@ -7,8 +7,6 @@ A curated directory of high-signal university lecture series, OpenCourseWare arc
 - [Philosophy of Science & Scientific Epistemology](#philosophy-of-science--scientific-epistemology)
 - [Epistemic Virtues, Cognitive Science, & Interdisciplinary Perspectives](#epistemic-virtues-cognitive-science--interdisciplinary-perspectives)
 
----
-
 ## Foundational Epistemology & Theory of Knowledge
 
 - [Theory of Knowledge (MIT OpenCourseWare / Prof. Caspar Hare & Prof. Agustín Rayo)](https://ocw.mit.edu/courses/24-211-theory-of-knowledge-spring-2014/)

@@ -14,8 +14,6 @@ Having completed the core foundations of epistemology, you can pursue specialize
 - **Epistemology of Science and Confirmation:** Examines how scientific hypotheses are confirmed, how theoretical models interface with evidence, and whether science warrants realism about unobservable entities.
 - **Metaepistemology and Contemporary Theoretical Programs:** Explores advanced modern frameworks including the Knowledge-First program, pragmatic encroachment, and the nature of epistemic normativity.
 
----
-
 ## Formal Epistemology and Decision Theory
 
 | Topic | Why Study | Resources |
@@ -24,8 +22,6 @@ Having completed the core foundations of epistemology, you can pursue specialize
 | Epistemic Utility and Accuracy-First Epistemology | Formulates decision-theoretic foundations for epistemic norms, demonstrating how epistemic rationality can be derived entirely from the pursuit of accuracy and the avoidance of error. | - **[SEP: “Epistemic Utility Arguments for Epistemic Norms”](https://plato.stanford.edu/entries/epistemic-utility/)**<br>- **Accuracy and the Laws of Credence – Richard Pettigrew (Oxford University Press)**<br>- **“Accuracy and Coherence: Prospects for an Alethic Epistemology of Partial Belief” (1998) – James M. Joyce** |
 | Epistemic Logic and Formal Learning Theory | Models multi-agent epistemic states using modal logic and analyzes the mathematical limits of truth-convergence in automated inquiry and inductive learning. | - **[SEP: “Formal Epistemology”](https://plato.stanford.edu/entries/formal-epistemology/)**<br>- **Reasoning About Knowledge – Ronald Fagin, Joseph Y. Halpern, Yoram Moses, and Moshe Y. Vardi (MIT Press)**<br>- **The Learning Grid: Logic and Epistemology – Oliver Schulte (Stanford University Courseware)** |
 | Formal Social Epistemology and Network Models | Analyzes how communication topologies, polarization dynamics, and information cascades impact collective truth-seeking across social systems. | - **[SEP: “Formal Epistemology (Section: Formal Social Epistemology)”](https://plato.stanford.edu/entries/formal-epistemology/#FifCasStuSocEpi)**<br>- **The Misinformation Age: How False Beliefs Spread – Cailin O'Connor and James Owen Weatherall (Yale University Press)**<br>- **Network Epistemology – Kevin Zollman (Carnegie Mellon Research Papers)** |
-
----
 
 ## Social, Political, and Applied Epistemology
 
@@ -36,8 +32,6 @@ Having completed the core foundations of epistemology, you can pursue specialize
 | Epistemology of Peer Disagreement | Explores whether encountering an epistemic peer who disagrees with your conclusion rationally mandates conciliation, suspension of judgment, or steadfastness. | - **[SEP: “Disagreement”](https://plato.stanford.edu/entries/disagreement/)**<br>- **The Epistemology of Disagreement: New Essays – David Christensen and Jennifer Lackey (eds.) (Oxford University Press)**<br>- **The Epistemic Significance of Disagreement – Jonathan Matheson (Palgrave Macmillan)** |
 | Digital and Applied Epistemology | Applies epistemological principles to online epistemic ecosystems, algorithmic recommendation systems, echo chambers, and epistemic bubbles. | - **[SEP: “Social Epistemology”](https://plato.stanford.edu/entries/epistemology-social/)**<br>- **The Philosophy of Fake News – Sven Bernecker, Amy K. Flowerree, and Thomas Grundmann (eds.) (Oxford University Press)**<br>- **“Echo Chambers and Epistemic Bubbles” (2020) – C. Thi Nguyen (Episteme)** |
 
----
-
 ## Epistemology of Science and Confirmation
 
 | Topic | Why Study | Resources |
@@ -46,8 +40,6 @@ Having completed the core foundations of epistemology, you can pursue specialize
 | Formal Confirmation Theory and Evidence | Investigates how empirical data qualitatively and quantitatively supports scientific hypotheses, addressing paradoxes of confirmation (e.g., the Raven Paradox, Goodman's New Riddle). | - **[SEP: “Confirmation”](https://plato.stanford.edu/entries/confirmation/)**<br>- **[SEP: “Scientific Evidence”](https://plato.stanford.edu/entries/evidence-scientific/)**<br>- **Evidence and Confirmation – Malcolm Forster (Cambridge University Press)** |
 | Underdetermination and Theory Choice | Analyzes the Holist/Duhem-Quine thesis, exploring how scientists rationally choose between rival theories when empirical data underdetermines theoretical commitments. | - **[SEP: “Underdetermination of Scientific Theory”](https://plato.stanford.edu/entries/scientific-underdetermination/)**<br>- **Theory and Evidence – Clark Glymour (Princeton University Press)**<br>- **The Structure of Scientific Revolutions – Thomas S. Kuhn (University of Chicago Press)** |
 | Social Epistemology of Science and Metascience | Examines science as a collective epistemic enterprise, addressing the division of cognitive labor, the peer review system, and the replication crisis. | - **[SEP: “Social Epistemology of Science”](https://plato.stanford.edu/entries/scientific-social-epistemology/)**<br>- **The Advancement of Science: Science Without Legend, Objectivity Without Illusions – Philip Kitcher (Oxford University Press)**<br>- **The Epistemology of Science – Kevin McCain (Routledge)** |
-
----
 
 ## Metaepistemology and Contemporary Theoretical Programs
 

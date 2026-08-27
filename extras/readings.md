@@ -8,8 +8,6 @@ A curated collection of field-defining monographs, milestone essays, and transfo
 - [Social, Feminist, & Applied Epistemology](#social-feminist--applied-epistemology)
 - [Knowledge-First & Contemporary Metaepistemology](#knowledge-first--contemporary-metaepistemology)
 
----
-
 ## Historical & Foundational Primary Texts
 
 | Title | Author(s) | Type | Why It's Worth Reading |
@@ -20,8 +18,6 @@ A curated collection of field-defining monographs, milestone essays, and transfo
 | [*Critique of Pure Reason*](https://www.gutenberg.org/ebooks/4280) | Immanuel Kant | Classic Treatise | Revolutionizes epistemology by synthesizing rationalism and empiricism, arguing that human cognition actively structures sensory experience via synthetic a priori categories. |
 | [*“Proof of an External World” (1939)*](https://www.jstor.org/stable/4544854) | G. E. Moore | Landmark Essay | Proposes the canonical common-sense refutation of radical skepticism, illustrating the power of dogmatist counter-arguments against skeptical hypotheses. |
 
----
-
 ## The Analysis of Knowledge & the Gettier Revolution
 
 | Title | Author(s) | Type | Why It's Worth Reading |
@@ -30,8 +26,6 @@ A curated collection of field-defining monographs, milestone essays, and transfo
 | [*“A Causal Theory of Knowing” (1967)*](https://www.jstor.org/stable/2023895) | Alvin I. Goldman | Landmark Paper | Introduces externalism to modern epistemology by arguing that knowledge requires an appropriate causal connection between fact and belief. |
 | *Philosophical Explanations* (Chapter: “Knowledge and Skepticism”) | Robert Nozick | Monograph Chapter | Develops the influential counterfactual tracking account of knowledge (sensitivity and adherence conditions) to defeat Gettier cases and skeptical challenges. |
 | [*“Solving the Skeptical Problem” (1995)*](https://www.jstor.org/stable/2186011) | Keith DeRose | Landmark Paper | Provides the definitive contextualist framework, demonstrating how truth-conditions for knowledge attributions shift according to conversational contexts and epistemic standards. |
-
----
 
 ## Theories of Justification, Architecture, & Naturalism
 
@@ -42,8 +36,6 @@ A curated collection of field-defining monographs, milestone essays, and transfo
 | *Epistemology and Cognition* | Alvin I. Goldman | Monograph | Synthesizes reliabilist epistemology with cognitive psychology, providing a comprehensive framework for process reliabilism. |
 | *Knowledge in Perspective: Selected Essays in Epistemology* | Ernest Sosa | Collected Essays | Inaugurates virtue epistemology by introducing epistemic competence (virtues) as a way to transcend the stalemate between foundationalism and coherentism. |
 
----
-
 ## Social, Feminist, & Applied Epistemology
 
 | Title | Author(s) | Type | Why It's Worth Reading |
@@ -52,8 +44,6 @@ A curated collection of field-defining monographs, milestone essays, and transfo
 | *Knowledge in a Social World* | Alvin I. Goldman | Monograph | Systematizes social epistemology by evaluating how legal systems, scientific communities, and democratic voting structures maximize true belief over error. |
 | *Learning from Words: Testimony as a Source of Knowledge* | Jennifer Lackey | Monograph | Provides a comprehensive account of testimony that balances internalist hearer requirements with externalist speaker reliability. |
 | [*“White Ignorance” (2007)*](https://philpapers.org/rec/MILWI) | Charles W. Mills | Landmark Essay | Foundational text in non-ideal social epistemology examining how racial supremacy and structural oppression actively produce and sustain collective ignorance. |
-
----
 
 ## Knowledge-First & Contemporary Metaepistemology
 
