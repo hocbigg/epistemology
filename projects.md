@@ -1,30 +1,34 @@
-# Projects
+# Epistemology Projects
 
-A curated directory of hands-on project walkthroughs, simulation workbooks, argument mapping systems, and empirical research toolkits for learning Epistemology by building, modeling, and analyzing real epistemic artifacts.
+A curated directory of hands-on project walkthroughs, simulation codebases, argument mapping guides, and empirical research toolkits for applying epistemological frameworks to concrete artifacts.
 
-## Formal Modeling & Computational Epistemology
+## Construct an Argument Map of a Philosophical Debate
 
-- [Odds & Ends: An Interactive Guide to Probability & Inductive Logic – Jonathan Weisberg](https://jonathanweisberg.org/vip/)
-- [The Open Handbook of Formal Epistemology: Mathematical Models & Toolkits – Richard Pettigrew & Jonathan Weisberg](https://jonathanweisberg.org/pdf/open-handbook-of-formal-epistemology.pdf)
-- [Simulating Epistemic Networks and the Zollman Effect in Python – Jonathan Weisberg](https://jonathanweisberg.org/)
-- [NetLogo Agent-Based Modeling Environment: Epistemic Communities & Polarization Models](https://ccl.northwestern.edu/netlogo/)
-- [Agent-Based Modeling in Philosophy of Science & Epistemology – Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/agent-based-models-philosophy-science/)
+- [Argdown: Getting Started Tutorial & Workflow Guide (Christian Voigt)](https://argdown.org/guide/)
+- [Argument Diagramming: Self-Paced Course & Workbench (Carnegie Mellon University Open Learning Initiative)](https://oli.cmu.edu/courses/argument-diagramming/)
+- [Argument Mapping Tutorials: Identifying Structure and Hidden Premises (Joe Lau / Philosophy@HKU)](https://philosophy.hku.hk/think/arg/)
+- [Kialo: Visual Deliberation and Argument Mapping Platform](https://www.kialo.com/)
 
-## Argument Reconstruction & Epistemic Mapping
+## Simulate Epistemic Networks and Belief Updating
 
-- [Argdown: Plain-Text Syntax for Complex Argumentation & Visual Graph Generation](https://argdown.org/)
-- [Creating and Visualizing Argument Maps with Argdown – Tutorial & Workflow Guide](https://argdown.org/guide/)
-- [Kialo: Visual Deliberation and Dialectical Tree Reconstruction Platform](https://www.kialo.com/)
-- [Reconstructing Philosophical Arguments: Step-by-Step Premise-Conclusion Workflow – Open Logic Project](https://openlogicproject.org/)
+- [Simulated Epistemic Networks: Python Implementation of the Zollman Effect and Polarization (Jonathan Weisberg)](https://github.com/jweisber/sep-sen)
+- [The Zollman Effect: Computational Explainer and Code Walkthrough (Jonathan Weisberg)](https://jonathanweisberg.org/post/zollman/)
+- [Odds & Ends: An Interactive Guide to Probability & Inductive Logic (Jonathan Weisberg)](https://jonathanweisberg.org/vip/)
+- [NetLogo: Multi-Agent Programmable Modeling Environment (Center for Connected Learning / Northwestern University)](https://ccl.northwestern.edu/netlogo/)
 
-## Applied Epistemology & Socratic Dialogue
+## Conduct a Socratic Belief Interview
 
-- [Understanding the Basics: Step-by-Step Conversational Method – Street Epistemology](https://streetepistemology.com/blog/street-epistemology-the-basics)
-- [What Do You Know? Structured Workshop Guide for Mapping Knowledge Claims – PLATO](https://www.plato-philosophy.org/teachertoolkit/what-do-you-know-an-exercise-about-what-knowledge-is/)
-- [Epistemic Bubble and Echo Chamber Diagnostic Toolkit – C. Thi Nguyen](https://plato.stanford.edu/entries/epistemology-social/)
+- [Navigating Beliefs: A Free Self-Directed Course for Rational Conversations (Street Epistemology International)](https://navigatingbeliefs.com/)
+- [Street Epistemology: Step-by-Step Conversational Guide (Street Epistemology International)](https://streetepistemology.com/blog/street-epistemology-the-basics)
+- [What Do You Know? An Exercise About What Knowledge Is (Richard Farr / PLATO)](https://www.plato-philosophy.org/teachertoolkit/what-do-you-know-an-exercise-about-what-knowledge-is/)
 
-## Experimental Epistemology (X-Phi) & Empirical Survey Design
+## Audit an Online Community for Epistemic Bubbles and Echo Chambers
 
-- [Experimental Epistemology: Survey Methodology and Intuition Testing – Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/experimental-epistemology/)
-- [Designing X-Phi Vignettes: Cross-Cultural Gettier Case Replication Protocol – Yale Experimental Philosophy Lab](https://pantheon.yale.edu/~knobe/x-phi.html)
-- [Open Science Framework: Experimental Philosophy Preregistration & Data Repository Template](https://osf.io/)
+- [Echo Chambers and Epistemic Bubbles: Diagnostic Framework (C. Thi Nguyen / Episteme)](https://doi.org/10.1017/epi.2018.32)
+- [Why It's as Hard to Escape an Echo Chamber as It Is to Flee a Cult: Applied Field Guide (C. Thi Nguyen / Aeon)](https://aeon.co/essays/why-its-as-hard-to-escape-an-echo-chamber-as-it-is-to-flee-a-cult)
+- [The Philosophy of Fake News: Credibility, Propagation, and Interventions (Sven Bernecker et al., eds.)](https://books.google.com/books?isbn=9780198863977)
+
+## Design and Run an Experimental Epistemology Survey
+
+- [The X-Phi Replicability Project: Protocols, Materials, and Survey Registrations (Open Science Framework)](https://osf.io/dvkpr/)
+- [The Theory and Practice of Experimental Philosophy: Practical Guide to Empirical Design and Vignette Construction (Justin Sytsma & Jonathan Livengood)](https://books.google.com/books?isbn=9781554810086)

@@ -1,51 +1,64 @@
-# Advanced Topics
+# Advanced Topics in Epistemology
 
-- [Formal Epistemology and Decision Theory](#formal-epistemology-and-decision-theory)
-- [Social, Political, and Applied Epistemology](#social-political-and-applied-epistemology)
-- [Epistemology of Science and Confirmation](#epistemology-of-science-and-confirmation)
-- [Metaepistemology and Contemporary Theoretical Programs](#metaepistemology-and-contemporary-theoretical-programs)
-
-Having completed the core foundations of epistemology, you can pursue specialized research tracks that investigate formal mathematical models, social institutions, scientific methodology, or foundational meta-normative theory.
-
-### Specialization Tracks
-
-- **Formal Epistemology and Decision Theory:** Investigates degrees of belief, probability kinematics, rational decision-making, and epistemic utility using mathematical and logical tools.
-- **Social, Political, and Applied Epistemology:** Analyzes how knowledge, testimony, disagreement, and injustice function across social groups, institutions, and digital communication networks.
-- **Epistemology of Science and Confirmation:** Examines how scientific hypotheses are confirmed, how theoretical models interface with evidence, and whether science warrants realism about unobservable entities.
-- **Metaepistemology and Contemporary Theoretical Programs:** Explores advanced modern frameworks including the Knowledge-First program, pragmatic encroachment, and the nature of epistemic normativity.
+- [Formal Epistemology and Decision Theory](#formal-epistemology-and-decision-theory): Investigates degrees of belief, probability kinematics, rational decision-making, and epistemic utility using mathematical and logical tools.
+- [Social, Political, and Applied Epistemology](#social-political-and-applied-epistemology): Analyzes how knowledge, testimony, disagreement, and injustice function across social groups, institutions, and digital communication networks.
+- [Epistemology of Science and Confirmation](#epistemology-of-science-and-confirmation): Examines how empirical evidence confirms scientific theories, how models handle underdetermination, and how scientific communities organize collective inquiry.
+- [Metaepistemology and Contemporary Theoretical Programs](#metaepistemology-and-contemporary-theoretical-programs): Explores advanced modern frameworks including the Knowledge-First program, epistemic normativity, pragmatic encroachment, and experimental methods.
 
 ## Formal Epistemology and Decision Theory
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| Bayesian Epistemology and Credence | Replaces binary belief models with continuous degrees of belief (credences), providing a rigorous mathematical framework for rational belief updating and evidence evaluation. | - **[SEP: “Bayesian Epistemology”](https://plato.stanford.edu/entries/epistemology-bayesian/)**<br>- **[Bayesian Epistemology](https://books.google.com/books?isbn=9780199269754) – Luc Bovens and Stephan Hartmann (Oxford University Press)**<br>- **[Putting Logic in Its Place: Formal Constraints on Rational Belief](https://books.google.com/books?isbn=9780199263257) – David Christensen (Oxford University Press)** |
-| Epistemic Utility and Accuracy-First Epistemology | Formulates decision-theoretic foundations for epistemic norms, demonstrating how epistemic rationality can be derived entirely from the pursuit of accuracy and the avoidance of error. | - **[SEP: “Epistemic Utility Arguments for Epistemic Norms”](https://plato.stanford.edu/entries/epistemic-utility/)**<br>- **[Accuracy and the Laws of Credence](https://books.google.com/books?isbn=9780198732716) – Richard Pettigrew (Oxford University Press)**<br>- **“[Accuracy and Coherence: Prospects for an Alethic Epistemology of Partial Belief](https://doi.org/10.1007/978-1-4020-9198-8_11)” (1998) – James M. Joyce** |
-| Epistemic Logic and Formal Learning Theory | Models multi-agent epistemic states using modal logic and analyzes the mathematical limits of truth-convergence in automated inquiry and inductive learning. | - **[SEP: “Formal Epistemology”](https://plato.stanford.edu/entries/formal-epistemology/)**<br>- **[Reasoning About Knowledge](https://books.google.com/books?isbn=9780262562003) – Ronald Fagin, Joseph Y. Halpern, Yoram Moses, and Moshe Y. Vardi (MIT Press)**<br>- **The Learning Grid: Logic and Epistemology – Oliver Schulte (Stanford University Courseware)** |
-| Formal Social Epistemology and Network Models | Analyzes how communication topologies, polarization dynamics, and information cascades impact collective truth-seeking across social systems. | - **[SEP: “Formal Epistemology (Section: Formal Social Epistemology)”](https://plato.stanford.edu/entries/formal-epistemology/#FifCasStuSocEpi)**<br>- **[The Misinformation Age: How False Beliefs Spread](https://books.google.com/books?isbn=9780300234015) – Cailin O'Connor and James Owen Weatherall (Yale University Press)**<br>- **Network Epistemology – Kevin Zollman (Carnegie Mellon Research Papers)** |
+Applies mathematical probability, modal logic, and formal decision theory to model credences, rational belief revision, and multi-agent informational networks.
+
+Bayesian Epistemology and Credence: [Odds & Ends: Introducing Probability & Decision with a Visual Emphasis (Jonathan Weisberg)](https://jonathanweisberg.org/vip/) - An open-access, visually grounded textbook covering subjective probability, Bayesian conditionalization, and decision theory.
+
+Bayesian Epistemology and Credence: [The Open Handbook of Formal Epistemology (Richard Pettigrew and Jonathan Weisberg, eds.)](https://philpapers.org/archive/PETTOH-2.pdf) - An open-access advanced volume delivering comprehensive treatments of precise and imprecise credences, primitive conditional probabilities, and formal belief dynamics.
+
+Epistemic Utility and Accuracy: [Accuracy and the Laws of Credence (Richard Pettigrew)](https://books.google.com/books?isbn=9780198732716) - Develops a non-pragmatic, decision-theoretic foundation for epistemic norms, demonstrating that Bayesian probabilism and conditionalization minimize epistemic inaccuracy.
+
+Epistemic Logic and Multi-Agent Systems: [Reasoning About Knowledge (Ronald Fagin, Joseph Y. Halpern, Yoram Moses, and Moshe Y. Vardi)](https://books.google.com/books?isbn=9780262562003) - Provides a foundational mathematical treatment of modal epistemic logic, common knowledge, distributed systems, and multi-agent communication protocols.
+
+Formal Social Epistemology and Network Models: [The Misinformation Age: How False Beliefs Spread (Cailin O'Connor and James Owen Weatherall)](https://books.google.com/books?isbn=9780300234015) - Uses formal network models and evolutionary game theory to analyze how social ties, industrial propaganda, and structural conformity distort collective truth-seeking.
 
 ## Social, Political, and Applied Epistemology
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| Testimony, Trust, and Epistemic Authority | Analyzes the conditions under which relying on other agents confers justification, addressing foundational debates between reductionism and non-reductionism. | - **[SEP: “Testimony”](https://plato.stanford.edu/entries/testimony/)**<br>- **[Learning from Words: Testimony as a Source of Knowledge](https://books.google.com/books?isbn=9780199219162) – Jennifer Lackey (Oxford University Press)**<br>- **[Knowledge in a Social World](https://books.google.com/books?isbn=9780198238201) – Alvin I. Goldman (Oxford University Press)** |
-| Epistemic Injustice and Ignorance Studies | Investigates how structural prejudice harms individuals in their capacity as knowers and how institutional ignorance is systematically sustained. | - **[SEP: “Epistemic Injustice”](https://plato.stanford.edu/entries/epistemic-injustice/)**<br>- **[Epistemic Injustice: Power and the Ethics of Knowing](https://books.google.com/books?isbn=9780198237907) – Miranda Fricker (Oxford University Press)**<br>- **[The Epistemology of Resistance: Gender and Racial Oppression, Epistemic Injustice, and Resistant Imaginations](https://books.google.com/books?isbn=9780199929023) – José Medina (Oxford University Press)** |
-| Epistemic Epistemology of Peer Disagreement | Explores whether encountering an epistemic peer who disagrees with your conclusion rationally mandates conciliation, suspension of judgment, or steadfastness. | - **[SEP: “Disagreement”](https://plato.stanford.edu/entries/disagreement/)**<br>- **[The Epistemology of Disagreement: New Essays](https://books.google.com/books?isbn=9780199698370) – David Christensen and Jennifer Lackey (eds.) (Oxford University Press)**<br>- **[The Epistemic Significance of Disagreement](https://books.google.com/books?isbn=9781137400895) – Jonathan Matheson (Palgrave Macmillan)** |
-| Digital and Applied Epistemology | Applies epistemological principles to online epistemic ecosystems, algorithmic recommendation systems, echo chambers, and epistemic bubbles. | - **[SEP: “Social Epistemology”](https://plato.stanford.edu/entries/epistemology-social/)**<br>- **[The Philosophy of Fake News](https://books.google.com/books?isbn=9780198863977) – Sven Bernecker, Amy K. Flowerree, and Thomas Grundmann (eds.) (Oxford University Press)**<br>- **“[Echo Chambers and Epistemic Bubbles](https://doi.org/10.1017/epi.2018.32)” (2020) – C. Thi Nguyen (Episteme)** |
+Investigates how epistemic status, justification, and injustice are shaped by interpersonal trust, group dynamics, political power, and networked digital environments.
+
+Social Testimony and Epistemic Trust: [Learning from Words: Testimony as a Source of Knowledge (Jennifer Lackey)](https://books.google.com/books?isbn=9780199219162) - Challenges transmission-only models of testimonial knowledge and defends a dualist view balancing hearer reasons with speaker reliability.
+
+Epistemic Injustice and Ignorance: [Epistemic Injustice: Power and the Ethics of Knowing (Miranda Fricker)](https://books.google.com/books?isbn=9780198237907) - Defines and explores testimonial injustice caused by prejudice and hermeneutical injustice caused by structural gaps in collective interpretive resources.
+
+Epistemic Injustice and Ignorance: [The Epistemology of Resistance: Gender and Racial Oppression, Epistemic Injustice, and Resistant Imaginations (José Medina)](https://books.google.com/books?isbn=9780199929023) - Expands epistemic injustice to systemic oppression, analyzing active ignorance, epistemic friction, and polyphonic counter-narratives.
+
+Epistemology of Peer Disagreement: [The Epistemology of Disagreement: New Essays (David Christensen and Jennifer Lackey, eds.)](https://books.google.com/books?isbn=9780199698370) - Assembles the foundational debates between conciliationism, the Equal Weight View, and steadfast views when facing epistemic peers.
+
+Digital Epistemology and Misinformation: [Echo Chambers and Epistemic Bubbles (C. Thi Nguyen)](https://doi.org/10.1017/epi.2018.32) - Delineates the conceptual distinction between epistemic bubbles formed by accidental omission and echo chambers formed by actively discrediting outside voices.
 
 ## Epistemology of Science and Confirmation
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| Scientific Realism versus Antirealism | Evaluates whether our best scientific theories describe mind-independent reality (including unobservables) or merely serve as empirically adequate instruments for prediction. | - **[SEP: “Scientific Realism”](https://plato.stanford.edu/entries/scientific-realism/)**<br>- **[The Scientific Image](https://books.google.com/books?isbn=9780198244271) – Bas C. van Fraassen (Oxford University Press)**<br>- **[Scientific Realism: How Science Tracks Truth](https://books.google.com/books?isbn=9780415208192) – Stathis Psillos (Routledge)** |
-| Formal Confirmation Theory and Evidence | Investigates how empirical data qualitatively and quantitatively supports scientific hypotheses, addressing paradoxes of confirmation (e.g., the Raven Paradox, Goodman's New Riddle). | - **[SEP: “Confirmation”](https://plato.stanford.edu/entries/confirmation/)**<br>- **[SEP: “Scientific Evidence”](https://plato.stanford.edu/entries/evidence-scientific/)**<br>- **Evidence and Confirmation – Malcolm Forster (Cambridge University Press)** |
-| Underdetermination and Theory Choice | Analyzes the Holist/Duhem-Quine thesis, exploring how scientists rationally choose between rival theories when empirical data underdetermines theoretical commitments. | - **[SEP: “Underdetermination of Scientific Theory”](https://plato.stanford.edu/entries/scientific-underdetermination/)**<br>- **[Theory and Evidence](https://books.google.com/books?isbn=9780691100777) – Clark Glymour (Princeton University Press)**<br>- **[The Structure of Scientific Revolutions](https://books.google.com/books?isbn=9780226458120) – Thomas S. Kuhn (University of Chicago Press)** |
-| Social Epistemology of Science and Metascience | Examines science as a collective epistemic enterprise, addressing the division of cognitive labor, the peer review system, and the replication crisis. | - **[SEP: “Social Epistemology of Science”](https://plato.stanford.edu/entries/scientific-social-epistemology/)**<br>- **[The Advancement of Science: Science Without Legend, Objectivity Without Illusions](https://books.google.com/books?isbn=9780195096538) – Philip Kitcher (Oxford University Press)**<br>- **The Epistemology of Science – Kevin McCain (Routledge)** |
+Analyzes how empirical observations warrant scientific theories, how theoretical models handle confirmation and underdetermination, and how scientific communities organize collective inquiry.
+
+Bayesian Confirmation Theory: [Notes on Bayesian Confirmation Theory (Michael Strevens)](https://www.strevens.org/bct/BCT.pdf) - A rigorous open-access treatise analyzing how probabilistic evidence confirms scientific hypotheses, resolving the Raven Paradox and Goodman's New Riddle of Induction.
+
+Scientific Realism and Antirealism: [The Scientific Image (Bas C. van Fraassen)](https://books.google.com/books?isbn=9780198244271) - Mounts the canonical defense of constructive empiricism, arguing that science aims for empirical adequacy rather than literal truth about unobservables.
+
+Scientific Realism and Antirealism: [Scientific Realism: How Science Tracks Truth (Stathis Psillos)](https://books.google.com/books?isbn=9780415208192) - Provides the standard contemporary defense of scientific realism, articulating the no-miracles argument and structural continuity across theory change.
+
+Underdetermination and Theory Choice: [The Structure of Scientific Revolutions (Thomas S. Kuhn)](https://books.google.com/books?isbn=9780226458120) - Investigates paradigm shifts, normal science, and how empirical evidence interacts with social and historical factors during scientific revolutions.
+
+Underdetermination and Theory Choice: [Theory and Evidence (Clark Glymour)](https://books.google.com/books?isbn=9780691100777) - Develops the bootstrap theory of confirmation to explain how scientists test hypotheses against underdetermined data without succumbing to radical holism.
+
+Social Epistemology of Science: [The Advancement of Science: Science Without Legend, Objectivity Without Illusions (Philip Kitcher)](https://books.google.com/books?isbn=9780195096538) - Models the division of cognitive labor, consensus formation, and organizational incentives that underpin rational scientific progress.
 
 ## Metaepistemology and Contemporary Theoretical Programs
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| Knowledge-First Epistemology | Inverts traditional analysis by treating knowledge as an unanalyzable, fundamental mental state that sets the standard for belief, evidence, and assertion. | - **[Knowledge and Its Limits](https://books.google.com/books?isbn=9780199256563) – Timothy Williamson (Oxford University Press)**<br>- **[SEP: “Knowledge-First Epistemology”](https://plato.stanford.edu/entries/knowledge-first/)**<br>- **[Knowledge First: Approaches in Epistemology and Mind](https://books.google.com/books?isbn=9780198716310) – J. Adam Carter, Emma C. Gordon, and Benjamin W. Jarvis (eds.) (Oxford University Press)** |
-| Epistemic Normativity and Value Theory | Investigates what makes epistemic evaluation normative, tackling the value problem (why knowledge is more valuable than mere true belief) and the nature of epistemic reasons. | - **[SEP: “The Value of Knowledge”](https://plato.stanford.edu/entries/knowledge-value/)**<br>- **Epistemic Normativity – Anne Meylan and Christoph Kelp (eds.) (Routledge)**<br>- **[The Nature and Value of Knowledge: Three Investigations](https://books.google.com/books?isbn=9780199586264) – Duncan Pritchard, Alan Millar, and Adrian Haddock (Oxford University Press)** |
-| Pragmatic Encroachment and Epistemic Stakes | Examines whether non-epistemic factors (such as the practical consequences of being wrong) affect whether an agent knows or is justified in believing a proposition. | - **[SEP: “Pragmatic Encroachment in Epistemology”](https://plato.stanford.edu/entries/pragmatic-encroachment/)**<br>- **[Knowledge and Practical Interests](https://books.google.com/books?isbn=9780199230433) – Jason Stanley (Oxford University Press)**<br>- **[Epistemic Angst: Radical Skepticism and the Groundlessness of Our Believing](https://books.google.com/books?isbn=9780691167237) – Duncan Pritchard (Princeton University Press)** |
-| Naturalized and Experimental Epistemology | Explores continuity between empirical cognitive science, evolutionary psychology, psychological heuristics, and traditional philosophical questions about knowledge. | - **[SEP: “Naturalism in Epistemology”](https://plato.stanford.edu/entries/epistemology-naturalized/)**<br>- **[SEP: “Experimental Epistemology”](https://plato.stanford.edu/entries/experimental-epistemology/)**<br>- **[Epistemology and Cognition](https://books.google.com/books?isbn=9780674258969) – Alvin I. Goldman (Harvard University Press)** |
+Investigates the normative, metaphysical, and methodological foundations of epistemic evaluation, including non-traditional architectures of knowledge and empirical approaches.
+
+Knowledge-First Epistemology: [Knowledge and Its Limits (Timothy Williamson)](https://books.google.com/books?isbn=9780199256563) - Systematically reorients epistemological theory by taking knowledge as a primitive, unanalyzable mental state that grounds evidence, belief, and assertion.
+
+Epistemic Normativity and Value Theory: [The Nature and Value of Knowledge: Three Investigations (Duncan Pritchard, Alan Millar, and Adrian Haddock)](https://books.google.com/books?isbn=9780199586264) - Examines the epistemic value problem, the swamping problem, and whether knowledge possesses distinctive final value over true belief.
+
+Pragmatic Encroachment and Epistemic Stakes: [Knowledge and Practical Interests (Jason Stanley)](https://books.google.com/books?isbn=9780199230433) - Argues that whether an agent knows a proposition depends on practical stakes and action contexts, defending interest-relative invariantism against contextualism.
+
+Naturalized and Experimental Epistemology: [Epistemology and Cognition (Alvin I. Goldman)](https://books.google.com/books?isbn=9780674258969) - Establishes a systematic bridge between normative epistemological justification and empirical cognitive psychology.
+
+Naturalized and Experimental Epistemology: [Advances in Experimental Epistemology (James R. Beebe, ed.)](https://books.google.com/books?isbn=9781472507372) - Collects empirical studies probing ordinary speakers' intuitions regarding Gettier vignettes, stakes-shifting contexts, and knowledge attributions.
