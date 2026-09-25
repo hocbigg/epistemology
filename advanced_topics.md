@@ -1,5 +1,7 @@
 # Advanced Topics in Epistemology
 
+Learners are encouraged to select one or two tracks aligned with their interests rather than attempting to complete all tracks.
+
 - [Formal Epistemology and Decision Theory](#formal-epistemology-and-decision-theory): Investigates degrees of belief, probability kinematics, rational decision-making, and epistemic utility using mathematical and logical tools.
 - [Social, Political, and Applied Epistemology](#social-political-and-applied-epistemology): Analyzes how knowledge, testimony, disagreement, and injustice function across social groups, institutions, and digital communication networks.
 - [Epistemology of Science and Confirmation](#epistemology-of-science-and-confirmation): Examines how empirical evidence confirms scientific theories, how models handle underdetermination, and how scientific communities organize collective inquiry.

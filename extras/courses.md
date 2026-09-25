@@ -2,10 +2,10 @@
 
 A curated directory of high-signal university lecture series, OpenCourseWare archives, and specialized online courses in Epistemology. These courses provide structured video and audio lectures from leading philosophers on foundational debates, social epistemology, confirmation theory, and epistemic cognitive science.
 
-- [Foundational Epistemology & Theory of Knowledge](#foundational-epistemology--theory-of-knowledge)
-- [Social, Political, & Applied Epistemology](#social-political--applied-epistemology)
-- [Philosophy of Science & Scientific Epistemology](#philosophy-of-science--scientific-epistemology)
-- [Epistemic Virtues, Cognitive Science, & Interdisciplinary Perspectives](#epistemic-virtues-cognitive-science--interdisciplinary-perspectives)
+- [Foundational Epistemology & Theory of Knowledge](#foundational-epistemology-theory-of-knowledge)
+- [Social, Political, & Applied Epistemology](#social-political-applied-epistemology)
+- [Philosophy of Science & Scientific Epistemology](#philosophy-of-science-scientific-epistemology)
+- [Epistemic Virtues, Cognitive Science, & Interdisciplinary Perspectives](#epistemic-virtues-cognitive-science-interdisciplinary-perspectives)
 
 ## Foundational Epistemology & Theory of Knowledge
 

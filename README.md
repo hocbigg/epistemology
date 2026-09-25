@@ -5,11 +5,31 @@ description: Path to a free self-taught education in Epistemology!
 
 ## Introduction
 
-The Epistemology curriculum is a **complete education in Epistemology** using online materials.
+Epistemology is the philosophical study of knowledge, belief, and justification. It investigates what distinguishes genuine knowledge from mere true opinion, how cognitive faculties like perception, memory, and testimony confer warrant, and whether we can establish secure epistemic footing against radical skeptical challenges. Studying epistemology sharpens your ability to reconstruct complex arguments, detect hidden assumptions, and evaluate evidence rigorously across scientific, legal, and everyday contexts.
 
-**[How to contribute](/CONTRIBUTING.html)**
+This curriculum is built for independent learners with no prior background in philosophy. You do not need prior training in formal logic or intellectual history. The curriculum starts with the practical reasoning tools—such as validity, soundness, and argument mapping—needed to evaluate epistemological claims, providing the conceptual foundation required for the debates that follow.
 
-## Communities
+### How to Navigate the Curriculum
+
+The curriculum follows a cumulative sequence where each subject builds on the vocabulary of the last:
+
+- **Foundational Tools:** Begin with *Philosophical Reasoning and Argument Analysis* to master premise-conclusion structures, inductive and deductive inference, and common informal fallacies.
+- **The Analysis of Knowledge:** Move to *The Definition and Analysis of Knowledge* to explore the classical tripartite view of knowledge as justified true belief (JTB), the Gettier counterexamples that challenged it, and subsequent attempts to define knowledge through tracking, sensitivity, and safety conditions.
+- **The Justification Triad:** Work through the three justification subjects in order. First examine where justified beliefs originate (*Sources of Epistemic Justification*), then investigate how beliefs structurally support one another against the regress problem (*The Structure of Justification*), and finally evaluate competing criteria for warrant (*Theories of Justification and Warrant*), including internalism, externalist reliabilism, and virtue epistemology.
+- **Skepticism and Anti-Skepticism:** Conclude by confronting radical challenges to the external world in *Philosophical Skepticism* (Cartesian and Pyrrhonian doubt) before studying the major rejoinders in *Responses to Skepticism* (Moorean dogmatism, contextualism, and fallibilism).
+
+Each subject lists multiple resources tailored to different learning styles. You do not need to consume every resource listed under a topic. For instance, you can choose between a concise narrative primer (such as Jennifer Nagel’s) or a comprehensive textbook (such as Duncan Pritchard’s or Robert Audi’s), using the accompanying video playlists and primary source essays to clarify difficult problems.
+
+### Beyond the Core
+
+This curriculum covers only the foundational core that every student of epistemology should understand before branching into specialized territory. Once you have worked through these core subjects, you can deepen your study through the other pages in this series:
+
+- Explore Bayesian credences, social network models, epistemic injustice, and confirmation theory in [Advanced Topics](advanced_topics.md).
+- Model polarization dynamics, map arguments, or conduct belief interviews in [Projects](projects.md).
+- Engage directly with historical classics and milestone papers in [Readings](extras/readings.md).
+- Watch comprehensive audiovisual university lectures in [Courses](extras/courses.md).
+
+### Communities
 
 - Forums:
     - [The Philosophy Forum](https://thephilosophyforum.com/)
