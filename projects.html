@@ -1,108 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Projects</title>
-<link rel="stylesheet" href="/epistemology/style.css">
-<meta name="description" content="">
+  <title>Projects</title>
+  <meta name="description" content="Projects curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/epistemology/">
+  <link rel="canonical" href="https://hocbigg.github.io/epistemology/projects.html">
+  <meta property="og:title" content="Projects">
+  <meta property="og:description" content="Projects curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/epistemology/projects.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Projects">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/epistemology/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/epistemology/">Epistemology</a>
-<a href="/epistemology/advanced_topics.html">Advanced Topics</a>
-<a href="/epistemology/projects.html">Projects</a>
-<a href="/epistemology/extras/courses.html">Extra Courses</a>
-<a href="/epistemology/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/epistemology/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/epistemology/">Epistemology</a></li>
+      <li><a href="/epistemology/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/epistemology/projects.html">Projects</a></li>
+      <li><a href="/epistemology/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/epistemology/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/epistemology" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
 
 <h1 id="projects">Projects</h1>
-<p>This page is a curated collection of well-written, step-by-step guides for learning Epistemology through hands-on, project-based practice.</p>
 <blockquote>
-<p><em>What I cannot create, I do not understand — Richard Feynman.</em></p>
+<p>"What I cannot create, I do not understand." — Richard Feynman</p>
 </blockquote>
-<p>These projects are meant to support learning throughout the curriculum, not only at the end.<br />
-By building, writing, creating, or reconstructing real artifacts in the field, learners develop practical understanding alongside theoretical study.</p>
-<h2 id="tutorials">Tutorials</h2>
 <ul>
-<li><a href="#construct-your-own-epistemic-theory">Epistemic Theory</a></li>
-<li><a href="#construct-your-own-definition-of-knowledge">Definition of Knowledge</a></li>
-<li><a href="#develop-your-own-justification-account">Justification Account</a></li>
-<li><a href="#build-your-own-theory-of-epistemic-justification">Theory of Epistemic Justification</a></li>
-<li><a href="#formulate-your-own-analysis-of-skepticism">Analysis of Skepticism</a></li>
-<li><a href="#construct-your-own-response-to-skepticism">Response to Skepticism</a></li>
-<li><a href="#design-your-own-epistemic-virtue-framework">Epistemic Virtue Framework</a></li>
-<li><a href="#build-your-own-reliabilist-model">Reliabilist Model</a></li>
-<li><a href="#develop-your-own-contextualist-semantics">Contextualist Semantics</a></li>
-<li><a href="#construct-your-own-formal-epistemic-system">Formal Epistemic System</a></li>
-<li><a href="#create-your-own-epistemology-of-a-specific-domain">Epistemology of Specific Domain</a></li>
+<li><a href="#construct-your-own-argument-maps">Argument Maps</a></li>
+<li><a href="#simulate-your-own-epistemic-networks">Epistemic Networks</a></li>
+<li><a href="#conduct-your-own-belief-interviews">Belief Interviews</a></li>
+<li><a href="#perform-your-own-epistemic-audits">Epistemic Audits</a></li>
+<li><a href="#design-your-own-epistemology-surveys">Epistemology Surveys</a></li>
 </ul>
-<h3 id="construct-your-own-epistemic-theory">Construct Your Own Epistemic Theory</h3>
+<h2 id="construct-your-own-argument-maps">Construct your own argument maps</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://people.cs.rutgers.edu/~biglars/epis.pdf">Epistemology: A Contemporary Introduction to the Theory of Knowledge (open PDF textbook)</a> (<em>Open Textbook / Comprehensive Guide</em>)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.alignmentforum.org/posts/L9W9cCjcgZwDgKzZ7/my-model-of-epistemology">My Model of Epistemology (personal reconstruction example with reflective steps)</a> (<em>Blog Post / Step-by-Step Model Building</em>)</li>
+<li><a href="https://argdown.org/guide/" target="_blank" rel="noopener noreferrer">Argdown: Getting Started Tutorial and Workflow Guide (Christian Voigt)</a></li>
+<li><a href="https://oli.cmu.edu/courses/argument-diagramming/" target="_blank" rel="noopener noreferrer">Argument Diagramming: Self-Paced Course and Workbench (Carnegie Mellon University Open Learning Initiative)</a></li>
+<li><a href="https://philosophy.hku.hk/think/arg/" target="_blank" rel="noopener noreferrer">Argument Mapping Tutorials: Identifying Structure and Hidden Premises (Joe Lau / Philosophy@HKU)</a></li>
+<li><a href="https://www.kialo.com/" target="_blank" rel="noopener noreferrer">Kialo: Visual Deliberation and Argument Mapping Platform</a></li>
 </ul>
-<h3 id="construct-your-own-definition-of-knowledge">Construct Your Own Definition of Knowledge</h3>
+<h2 id="simulate-your-own-epistemic-networks">Simulate your own epistemic networks</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.plato-philosophy.org/teachertoolkit/what-do-you-know-an-exercise-about-what-knowledge-is">What do you know? (structured classroom exercise to map and construct knowledge statements)</a> (<em>Interactive Exercise / Activity Guide</em>)</li>
+<li><a href="https://github.com/jweisber/sep-sen" target="_blank" rel="noopener noreferrer">Simulated Epistemic Networks: Python Implementation of the Zollman Effect and Polarization (Jonathan Weisberg)</a></li>
+<li><a href="https://jonathanweisberg.org/post/zollman/" target="_blank" rel="noopener noreferrer">The Zollman Effect: Computational Explainer and Code Walkthrough (Jonathan Weisberg)</a></li>
+<li><a href="https://jonathanweisberg.org/vip/" target="_blank" rel="noopener noreferrer">Odds &amp; Ends: An Interactive Guide to Probability and Inductive Logic (Jonathan Weisberg)</a></li>
+<li><a href="https://ccl.northwestern.edu/netlogo/" target="_blank" rel="noopener noreferrer">NetLogo: Multi-Agent Programmable Modeling Environment (Center for Connected Learning / Northwestern University)</a></li>
 </ul>
-<h3 id="develop-your-own-justification-account">Develop Your Own Justification Account</h3>
+<h2 id="conduct-your-own-belief-interviews">Conduct your own belief interviews</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://press.rebus.community/intro-to-phil-epistemology/chapter/epistemic-justification/">Epistemic Justification – Introduction to Philosophy: Epistemology (open textbook chapter with reflection and analysis prompts)</a> (<em>Open Textbook Chapter / Analytical Guide</em>)</li>
+<li><a href="https://navigatingbeliefs.com/" target="_blank" rel="noopener noreferrer">Navigating Beliefs: A Self-Directed Course for Rational Conversations (Street Epistemology International)</a></li>
+<li><a href="https://streetepistemology.com/blog/understanding-the-basics" target="_blank" rel="noopener noreferrer">Understanding the Basics: Step-by-Step Conversational Guide (Joe Hitchens / Street Epistemology)</a></li>
+<li><a href="https://github.com/lumpiluk/sequestions" target="_blank" rel="noopener noreferrer">Helpful Questions for Socratic Inquiries: Open-Source Prompt Bank (Lukas Radunsky / GitHub)</a></li>
+<li>What Do You Know? An Exercise About What Knowledge Is (Richard Farr / PLATO) - Search 'What Do You Know?' on the PLATO Philosophy Toolkit for the guided classroom protocol classifying knowledge claims.</li>
 </ul>
-<h3 id="build-your-own-theory-of-epistemic-justification">Build Your Own Theory of Epistemic Justification</h3>
+<h2 id="perform-your-own-epistemic-audits">Perform your own epistemic audits</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://1000wordphilosophy.com/2023/03/19/epistemic-justification/">Epistemic Justification: What is Rational Belief? (introductory exposition with critical reconstruction elements)</a> (<em>Introductory Article / Conceptual Guide</em>)</li>
+<li><a href="https://doi.org/10.1017/epi.2018.32" target="_blank" rel="noopener noreferrer">Echo Chambers and Epistemic Bubbles: Diagnostic Framework (C. Thi Nguyen / Episteme)</a></li>
+<li><a href="https://aeon.co/essays/why-its-as-hard-to-escape-an-echo-chamber-as-it-is-to-flee-a-cult" target="_blank" rel="noopener noreferrer">Why It's as Hard to Escape an Echo Chamber as It Is to Flee a Cult: Applied Field Guide (C. Thi Nguyen / Aeon)</a></li>
+<li><a href="https://books.google.com/books?isbn=9780198863977" target="_blank" rel="noopener noreferrer">The Epistemology of Fake News: Credibility, Propagation, and Interventions (Sven Bernecker, Amy K. Flowerree, and Thomas Grundmann, eds.)</a> - Paid book; provides analytical frameworks for diagnosing epistemic pathologies, algorithmic distortion, and conspiracy networks.</li>
 </ul>
-<h3 id="formulate-your-own-analysis-of-skepticism">Formulate Your Own Analysis of Skepticism</h3>
+<h2 id="design-your-own-epistemology-surveys">Design your own epistemology surveys</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://press.rebus.community/intro-to-phil-epistemology/chapter/skepticism/">Skepticism – Introduction to Philosophy: Epistemology (chapter with analysis and response prompts)</a> (<em>Open Textbook Chapter / Critical Analysis Guide</em>)</li>
+<li><a href="https://osf.io/dvkpr/" target="_blank" rel="noopener noreferrer">The X-Phi Replicability Project: Protocols, Materials, and Survey Registrations (Open Science Framework)</a></li>
+<li><a href="https://books.google.com/books?isbn=9781554810086" target="_blank" rel="noopener noreferrer">The Theory and Practice of Experimental Philosophy: Practical Guide to Empirical Design and Vignette Construction (Justin Sytsma &amp; Jonathan Livengood)</a> - Paid book; step-by-step practical guide covering vignette construction, experimental controls, and statistical analysis for philosophical surveys.</li>
 </ul>
-<h3 id="construct-your-own-response-to-skepticism">Construct Your Own Response to Skepticism</h3>
-<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.streetepistemology.com/blog/street-epistemology-the-basics">Understanding the Basics - Street Epistemology (step-by-step conversational method to examine and respond to knowledge claims skeptically)</a> (<em>Procedural Guide / Dialogue Framework</em>)</li>
-</ul>
-<h3 id="design-your-own-epistemic-virtue-framework">Design Your Own Epistemic Virtue Framework</h3>
-<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=x2kLOisfkPw">PHILOSOPHY - Epistemology: Virtue Epistemology [HD] (video exposition supporting framework construction through character traits)</a> (<em>Video Lecture / Virtue Mapping Guide</em>)</li>
-</ul>
-<h3 id="build-your-own-reliabilist-model">Build Your Own Reliabilist Model</h3>
-<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/reliabilism/">Reliabilist Epistemology (detailed entry with process for evaluating and adapting reliability models)</a> (<em>Encyclopedia Entry / Model Analysis Guide</em>)</li>
-</ul>
-<h3 id="develop-your-own-contextualist-semantics">Develop Your Own Contextualist Semantics</h3>
-<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=wi4hZg7EtK8">PHILOSOPHY - Epistemology: Contextualism [HD] (video explaining mechanics to support semantic adaptation)</a> (<em>Video Explanation / Contextual Framework Guide</em>)</li>
-</ul>
-<h3 id="construct-your-own-formal-epistemic-system">Construct Your Own Formal Epistemic System</h3>
-<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://jonathanweisberg.org/pdf/open-handbook-of-formal-epistemology.pdf">The Open Handbook of Formal Epistemology (open PDF with mathematical tools and chapters for building probabilistic/Bayesian systems)</a> (<em>Open Handbook / Mathematical Tutorial</em>)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.kevindorst.com/uploads/8/8/1/7/88177244/intro_to_formal_epistemology.pdf">Intro to Formal Epistemology: Reading List (curated guide to tools for constructing formal models)</a> (<em>Reading List / Introductory Guide</em>)</li>
-</ul>
-<h3 id="create-your-own-epistemology-of-a-specific-domain">Create Your Own Epistemology of a Specific Domain</h3>
-<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://press.rebus.community/intro-to-phil-epistemology/">Epistemology of Specific Domain examples in open textbook sections (e.g., social, feminist epistemologies with applied analysis prompts)</a> (<em>Open Textbook / Applied Extension Guide</em>)</li>
-</ul>
-</article>
-</main>
+    </article>
+  </main>
 
 </body>
 </html>

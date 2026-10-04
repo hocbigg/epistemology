@@ -1,161 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Advanced Topics</title>
-<link rel="stylesheet" href="/epistemology/style.css">
-<meta name="description" content="">
+  <title>Advanced Topics in Epistemology</title>
+  <meta name="description" content="Advanced Topics in Epistemology curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/epistemology/">
+  <link rel="canonical" href="https://hocbigg.github.io/epistemology/advanced_topics.html">
+  <meta property="og:title" content="Advanced Topics in Epistemology">
+  <meta property="og:description" content="Advanced Topics in Epistemology curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/epistemology/advanced_topics.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Advanced Topics">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/epistemology/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/epistemology/">Epistemology</a>
-<a href="/epistemology/advanced_topics.html">Advanced Topics</a>
-<a href="/epistemology/projects.html">Projects</a>
-<a href="/epistemology/extras/courses.html">Extra Courses</a>
-<a href="/epistemology/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/epistemology/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/epistemology/">Epistemology</a></li>
+      <li><a href="/epistemology/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/epistemology/projects.html">Projects</a></li>
+      <li><a href="/epistemology/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/epistemology/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/epistemology" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
-<h1 id="advanced-topics">Advanced Topics</h1>
+  <main id="main-content">
+    <article>
+
+<h1 id="advanced-topics-in-epistemology">Advanced Topics in Epistemology</h1>
+<p>Learners are encouraged to select one or two tracks aligned with their interests rather than attempting to complete all tracks.</p>
 <ul>
-<li><a href="#probability-and-formal-reasoning">Probability and Formal Reasoning</a></li>
-<li><a href="#social-and-applied-epistemology">Social and Applied Epistemology</a></li>
-<li><a href="#epistemology-of-science">Epistemology of Science</a></li>
-<li><a href="#advanced-and-interdisciplinary-epistemology">Advanced and Interdisciplinary Epistemology</a></li>
+<li><a href="#formal-epistemology-and-decision-theory">Formal Epistemology and Decision Theory</a>: Investigates degrees of belief, probability kinematics, rational decision-making, and epistemic utility using mathematical and logical tools.</li>
+<li><a href="#social-political-and-applied-epistemology">Social, Political, and Applied Epistemology</a>: Analyzes how knowledge, testimony, disagreement, and injustice function across social groups, institutions, and digital communication networks.</li>
+<li><a href="#epistemology-of-science-and-confirmation">Epistemology of Science and Confirmation</a>: Examines how empirical evidence confirms scientific theories, how models handle underdetermination, and how scientific communities organize collective inquiry.</li>
+<li><a href="#metaepistemology-and-contemporary-theoretical-programs">Metaepistemology and Contemporary Theoretical Programs</a>: Explores advanced modern frameworks including the Knowledge-First program, epistemic normativity, pragmatic encroachment, and experimental methods.</li>
 </ul>
-<p>Once you have finished sections I–IV, the remaining sections are optional specialization tracks. They explore particular directions or applications of epistemological thinking. You do <strong>not</strong> need to do all of them.</p>
-<p>The specialization tracks are:</p>
-<ul>
-<li>V. Probability and Formal Reasoning</li>
-<li>VI. Social and Applied Epistemology</li>
-<li>VII. Epistemology of Science</li>
-<li>VIII. Advanced and Interdisciplinary Epistemology</li>
-</ul>
-<p>Pick based on your interests and goals after finishing the core:</p>
-<ul>
-<li>Choose <strong>Probability and Formal Reasoning</strong> if you enjoy mathematics, logic, precise modeling, or want to understand how probability and evidence work in detail.</li>
-<li>Choose <strong>Social and Applied Epistemology</strong> if you are interested in how knowledge works in groups, institutions, online environments, politics, trust, misinformation, or questions of fairness and injustice.</li>
-<li>Choose <strong>Epistemology of Science</strong> if you want to understand how scientific knowledge is produced, justified, and distinguished from non-science.</li>
-<li>Choose <strong>Advanced and Interdisciplinary Epistemology</strong> if you are curious about connections between epistemology and artificial intelligence, decision-making under uncertainty, or highly technical/formal approaches.</li>
-</ul>
-<h2 id="probability-and-formal-reasoning">Probability and Formal Reasoning</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book/Text</th>
-<th>Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>11. Probability in Epistemology</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/philosophicalthe0000gill">Philosophical Theories of Probability – Donald Gillies</a></strong></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/epistemic-quest-for-truth">The Epistemic Quest for Truth – Erasmus University (Coursera)</a></strong></td>
-</tr>
-<tr>
-<td>12. Bayesian Epistemology</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/epistemology-bayesian/">SEP: “Bayesian Epistemology”</a></strong></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="social-and-applied-epistemology">Social and Applied Epistemology</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book/Text</th>
-<th>Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>13. Social Epistemology</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/epistemology-social/">SEP: “Social Epistemology”</a></strong></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/knowledge-first-social-epistemology">Knowledge-First Social Epistemology – University of Glasgow (Coursera)</a></strong></td>
-</tr>
-<tr>
-<td>14. Testimony and Trust</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/testimony/">SEP: “Testimony”</a></strong></td>
-<td></td>
-</tr>
-<tr>
-<td>15. Epistemic Injustice and Non-Ideal Epistemology</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/feminist-epistemology/#epiInj">SEP: “Epistemic Injustice”</a></strong> (section within feminist epistemology; see also dedicated entries)</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="epistemology-of-science">Epistemology of Science</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book/Text</th>
-<th>Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>16. Scientific Knowledge and Method</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.perlego.com/book/2692973/theory-and-reality-an-introduction-to-the-philosophy-of-science-second-edition-pdf">Theory and Reality – Peter Godfrey-Smith</a></strong></td>
-<td></td>
-</tr>
-<tr>
-<td>17. Evidence and Inference in Science</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/evidence-scientific/">SEP: “Scientific Evidence”</a></strong></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="advanced-and-interdisciplinary-epistemology">Advanced and Interdisciplinary Epistemology</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book/Text</th>
-<th>Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>18. Formal Epistemology</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/formal-epistemology/">SEP: “Formal Epistemology”</a></strong></td>
-<td></td>
-</tr>
-<tr>
-<td>19. Decision Theory and Epistemic Rationality</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/decision-theory/">SEP: “Decision Theory”</a></strong></td>
-<td></td>
-</tr>
-<tr>
-<td>20. Computational and AI Epistemology</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/artificial-intelligence/">SEP: “Artificial Intelligence”</a></strong></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://mitxonline.mit.edu/courses/course-v1:MITxT+24.09x/">Minds and Machines – MITx (edX)</a></strong> (rigorous philosophy of mind/AI focus)</td>
-</tr>
-</tbody>
-</table>
-</article>
-</main>
+<h2 id="formal-epistemology-and-decision-theory">Formal Epistemology and Decision Theory</h2>
+<p>Applies mathematical probability, modal logic, and formal decision theory to model credences, rational belief revision, and multi-agent informational networks.</p>
+<p>Bayesian Epistemology and Credence: <a href="https://jonathanweisberg.org/vip/" target="_blank" rel="noopener noreferrer">Odds &amp; Ends: Introducing Probability &amp; Decision with a Visual Emphasis (Jonathan Weisberg)</a> - An open-access, visually grounded textbook covering subjective probability, Bayesian conditionalization, and decision theory.</p>
+<p>Bayesian Epistemology and Credence: <a href="https://philpapers.org/archive/PETTOH-2.pdf" target="_blank" rel="noopener noreferrer">The Open Handbook of Formal Epistemology (Richard Pettigrew and Jonathan Weisberg, eds.)</a> - An open-access advanced volume delivering comprehensive treatments of precise and imprecise credences, primitive conditional probabilities, and formal belief dynamics.</p>
+<p>Epistemic Utility and Accuracy: <a href="https://books.google.com/books?isbn=9780198732716" target="_blank" rel="noopener noreferrer">Accuracy and the Laws of Credence (Richard Pettigrew)</a> - Develops a non-pragmatic, decision-theoretic foundation for epistemic norms, demonstrating that Bayesian probabilism and conditionalization minimize epistemic inaccuracy.</p>
+<p>Epistemic Logic and Multi-Agent Systems: <a href="https://books.google.com/books?isbn=9780262562003" target="_blank" rel="noopener noreferrer">Reasoning About Knowledge (Ronald Fagin, Joseph Y. Halpern, Yoram Moses, and Moshe Y. Vardi)</a> - Provides a foundational mathematical treatment of modal epistemic logic, common knowledge, distributed systems, and multi-agent communication protocols.</p>
+<p>Formal Social Epistemology and Network Models: <a href="https://books.google.com/books?isbn=9780300234015" target="_blank" rel="noopener noreferrer">The Misinformation Age: How False Beliefs Spread (Cailin O'Connor and James Owen Weatherall)</a> - Uses formal network models and evolutionary game theory to analyze how social ties, industrial propaganda, and structural conformity distort collective truth-seeking.</p>
+<h2 id="social-political-and-applied-epistemology">Social, Political, and Applied Epistemology</h2>
+<p>Investigates how epistemic status, justification, and injustice are shaped by interpersonal trust, group dynamics, political power, and networked digital environments.</p>
+<p>Social Testimony and Epistemic Trust: <a href="https://books.google.com/books?isbn=9780199219162" target="_blank" rel="noopener noreferrer">Learning from Words: Testimony as a Source of Knowledge (Jennifer Lackey)</a> - Challenges transmission-only models of testimonial knowledge and defends a dualist view balancing hearer reasons with speaker reliability.</p>
+<p>Epistemic Injustice and Ignorance: <a href="https://books.google.com/books?isbn=9780198237907" target="_blank" rel="noopener noreferrer">Epistemic Injustice: Power and the Ethics of Knowing (Miranda Fricker)</a> - Defines and explores testimonial injustice caused by prejudice and hermeneutical injustice caused by structural gaps in collective interpretive resources.</p>
+<p>Epistemic Injustice and Ignorance: <a href="https://books.google.com/books?isbn=9780199929023" target="_blank" rel="noopener noreferrer">The Epistemology of Resistance: Gender and Racial Oppression, Epistemic Injustice, and Resistant Imaginations (José Medina)</a> - Expands epistemic injustice to systemic oppression, analyzing active ignorance, epistemic friction, and polyphonic counter-narratives.</p>
+<p>Epistemology of Peer Disagreement: <a href="https://books.google.com/books?isbn=9780199698370" target="_blank" rel="noopener noreferrer">The Epistemology of Disagreement: New Essays (David Christensen and Jennifer Lackey, eds.)</a> - Assembles the foundational debates between conciliationism, the Equal Weight View, and steadfast views when facing epistemic peers.</p>
+<p>Digital Epistemology and Misinformation: <a href="https://doi.org/10.1017/epi.2018.32" target="_blank" rel="noopener noreferrer">Echo Chambers and Epistemic Bubbles (C. Thi Nguyen)</a> - Delineates the conceptual distinction between epistemic bubbles formed by accidental omission and echo chambers formed by actively discrediting outside voices.</p>
+<h2 id="epistemology-of-science-and-confirmation">Epistemology of Science and Confirmation</h2>
+<p>Analyzes how empirical observations warrant scientific theories, how theoretical models handle confirmation and underdetermination, and how scientific communities organize collective inquiry.</p>
+<p>Bayesian Confirmation Theory: <a href="https://www.strevens.org/bct/BCT.pdf" target="_blank" rel="noopener noreferrer">Notes on Bayesian Confirmation Theory (Michael Strevens)</a> - A rigorous open-access treatise analyzing how probabilistic evidence confirms scientific hypotheses, resolving the Raven Paradox and Goodman's New Riddle of Induction.</p>
+<p>Scientific Realism and Antirealism: <a href="https://books.google.com/books?isbn=9780198244271" target="_blank" rel="noopener noreferrer">The Scientific Image (Bas C. van Fraassen)</a> - Mounts the canonical defense of constructive empiricism, arguing that science aims for empirical adequacy rather than literal truth about unobservables.</p>
+<p>Scientific Realism and Antirealism: <a href="https://books.google.com/books?isbn=9780415208192" target="_blank" rel="noopener noreferrer">Scientific Realism: How Science Tracks Truth (Stathis Psillos)</a> - Provides the standard contemporary defense of scientific realism, articulating the no-miracles argument and structural continuity across theory change.</p>
+<p>Underdetermination and Theory Choice: <a href="https://books.google.com/books?isbn=9780226458120" target="_blank" rel="noopener noreferrer">The Structure of Scientific Revolutions (Thomas S. Kuhn)</a> - Investigates paradigm shifts, normal science, and how empirical evidence interacts with social and historical factors during scientific revolutions.</p>
+<p>Underdetermination and Theory Choice: <a href="https://books.google.com/books?isbn=9780691100777" target="_blank" rel="noopener noreferrer">Theory and Evidence (Clark Glymour)</a> - Develops the bootstrap theory of confirmation to explain how scientists test hypotheses against underdetermined data without succumbing to radical holism.</p>
+<p>Social Epistemology of Science: <a href="https://books.google.com/books?isbn=9780195096538" target="_blank" rel="noopener noreferrer">The Advancement of Science: Science Without Legend, Objectivity Without Illusions (Philip Kitcher)</a> - Models the division of cognitive labor, consensus formation, and organizational incentives that underpin rational scientific progress.</p>
+<h2 id="metaepistemology-and-contemporary-theoretical-programs">Metaepistemology and Contemporary Theoretical Programs</h2>
+<p>Investigates the normative, metaphysical, and methodological foundations of epistemic evaluation, including non-traditional architectures of knowledge and empirical approaches.</p>
+<p>Knowledge-First Epistemology: <a href="https://books.google.com/books?isbn=9780199256563" target="_blank" rel="noopener noreferrer">Knowledge and Its Limits (Timothy Williamson)</a> - Systematically reorients epistemological theory by taking knowledge as a primitive, unanalyzable mental state that grounds evidence, belief, and assertion.</p>
+<p>Epistemic Normativity and Value Theory: <a href="https://books.google.com/books?isbn=9780199586264" target="_blank" rel="noopener noreferrer">The Nature and Value of Knowledge: Three Investigations (Duncan Pritchard, Alan Millar, and Adrian Haddock)</a> - Examines the epistemic value problem, the swamping problem, and whether knowledge possesses distinctive final value over true belief.</p>
+<p>Pragmatic Encroachment and Epistemic Stakes: <a href="https://books.google.com/books?isbn=9780199230433" target="_blank" rel="noopener noreferrer">Knowledge and Practical Interests (Jason Stanley)</a> - Argues that whether an agent knows a proposition depends on practical stakes and action contexts, defending interest-relative invariantism against contextualism.</p>
+<p>Naturalized and Experimental Epistemology: <a href="https://books.google.com/books?isbn=9780674258969" target="_blank" rel="noopener noreferrer">Epistemology and Cognition (Alvin I. Goldman)</a> - Establishes a systematic bridge between normative epistemological justification and empirical cognitive psychology.</p>
+<p>Naturalized and Experimental Epistemology: <a href="https://books.google.com/books?isbn=9781472507372" target="_blank" rel="noopener noreferrer">Advances in Experimental Epistemology (James R. Beebe, ed.)</a> - Collects empirical studies probing ordinary speakers' intuitions regarding Gettier vignettes, stakes-shifting contexts, and knowledge attributions.</p>
+    </article>
+  </main>
 
 </body>
 </html>

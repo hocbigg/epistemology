@@ -1,212 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Hocbigg - Epistemology</title>
-<link rel="stylesheet" href="/epistemology/style.css">
-<meta name="description" content="Path to a free self-taught education in Epistemology!">
+  <title>Hocbigg - Epistemology</title>
+  <meta name="description" content="Path to a free self-taught education in Epistemology!">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/epistemology/">
+  <link rel="canonical" href="https://hocbigg.github.io/epistemology/">
+  <meta property="og:title" content="Hocbigg - Epistemology">
+  <meta property="og:description" content="Path to a free self-taught education in Epistemology!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/epistemology/">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Hocbigg - Epistemology">
-<meta property="og:description" content="Path to a free self-taught education in Epistemology!">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/epistemology/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/epistemology/">Epistemology</a>
-<a href="/epistemology/advanced_topics.html">Advanced Topics</a>
-<a href="/epistemology/projects.html">Projects</a>
-<a href="/epistemology/extras/courses.html">Extra Courses</a>
-<a href="/epistemology/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/epistemology/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/epistemology/">Epistemology</a></li>
+      <li><a href="/epistemology/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/epistemology/projects.html">Projects</a></li>
+      <li><a href="/epistemology/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/epistemology/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/epistemology" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
+  <main id="main-content">
+    <article>
 <header class="page-header">
-  <img src="/images/logo.png" alt="">
+  <img src="/images/logo.png" alt="Hocbigg logo">
   <h1>Hocbigg - Epistemology</h1>
+  <p class="page-subtitle">Path to a free self-taught education in Epistemology!</p>
+  <p class="last-updated"><small>Last updated on: <time datetime="2026-09-21">2026-09-21</time></small></p>
 </header>
-
-<h1 id="contents">Contents</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Epistemology is the philosophical study of knowledge, belief, and justification. It investigates what distinguishes genuine knowledge from mere true opinion, how cognitive faculties like perception, memory, and testimony confer warrant, and whether we can establish secure epistemic footing against radical skeptical challenges. Studying epistemology sharpens your ability to reconstruct complex arguments, detect hidden assumptions, and evaluate evidence rigorously across scientific, legal, and everyday contexts.</p>
+<p>This curriculum is built for independent learners with no prior background in philosophy. You do not need prior training in formal logic or intellectual history. The curriculum starts with the practical reasoning tools—such as validity, soundness, and argument mapping—needed to evaluate epistemological claims, providing the conceptual foundation required for the debates that follow.</p>
+<h3 id="how-to-navigate-the-curriculum">How to Navigate the Curriculum</h3>
+<p>The curriculum follows a cumulative sequence where each subject builds on the vocabulary of the last:</p>
 <ul>
-<li><a href="#summary">Summary</a></li>
-<li><a href="#communities">Communities</a></li>
-<li><a href="#curriculum">Curriculum</a></li>
-<li><a href="#code-of-conduct">Code of conduct</a></li>
+<li><strong>Foundational Tools:</strong> Begin with <em>Philosophical Reasoning and Argument Analysis</em> to master premise-conclusion structures, inductive and deductive inference, and common informal fallacies.</li>
+<li><strong>The Analysis of Knowledge:</strong> Move to <em>The Definition and Analysis of Knowledge</em> to explore the classical tripartite view of knowledge as justified true belief (JTB), the Gettier counterexamples that challenged it, and subsequent attempts to define knowledge through tracking, sensitivity, and safety conditions.</li>
+<li><strong>The Justification Triad:</strong> Work through the three justification subjects in order. First examine where justified beliefs originate (<em>Sources of Epistemic Justification</em>), then investigate how beliefs structurally support one another against the regress problem (<em>The Structure of Justification</em>), and finally evaluate competing criteria for warrant (<em>Theories of Justification and Warrant</em>), including internalism, externalist reliabilism, and virtue epistemology.</li>
+<li><strong>Skepticism and Anti-Skepticism:</strong> Conclude by confronting radical challenges to the external world in <em>Philosophical Skepticism</em> (Cartesian and Pyrrhonian doubt) before studying the major rejoinders in <em>Responses to Skepticism</em> (Moorean dogmatism, contextualism, and fallibilism).</li>
 </ul>
-<h1 id="summary">Summary</h1>
-<p>The Epistemology curriculum is a <strong>complete education in Epistemology</strong> using online materials.</p>
-<h2 id="organization">Organization</h2>
-<p>This repository is organized into three main components:</p>
+<p>Each subject lists multiple resources tailored to different learning styles. You do not need to consume every resource listed under a topic. For instance, you can choose between a concise narrative primer (such as Jennifer Nagel’s) or a comprehensive textbook (such as Duncan Pritchard’s or Robert Audi’s), using the accompanying video playlists and primary source essays to clarify difficult problems.</p>
+<h3 id="beyond-the-core">Beyond the Core</h3>
+<p>This curriculum covers only the foundational core that every student of epistemology should understand before branching into specialized territory. Once you have worked through these core subjects, you can deepen your study through the other pages in this series:</p>
 <ul>
-<li><strong>Core Curriculum</strong> (this page): the foundational knowledge of the field;</li>
-<li><strong><a href="advanced_topics.html">Advanced Topics</a></strong>: focused study in specific areas;</li>
-<li><strong><a href="projects.html">Projects</a></strong>: support learning through practical application throughout the curriculum.</li>
+<li>Explore Bayesian credences, social network models, epistemic injustice, and confirmation theory in <a href="advanced_topics.html">Advanced Topics</a>.</li>
+<li>Model polarization dynamics, map arguments, or conduct belief interviews in <a href="projects.html">Projects</a>.</li>
+<li>Engage directly with historical classics and milestone papers in <a href="extras/readings.html">Readings</a>.</li>
+<li>Watch comprehensive audiovisual university lectures in <a href="extras/courses.html">Courses</a>.</li>
 </ul>
-<p><strong>Process:</strong> Learners may work through the curriculum independently or collaboratively, and either sequentially or selectively.</p>
-<ul>
-<li>For simplicity, courses in the Core Curriculum are ordered according to their prerequisites.</li>
-<li>The Core Curriculum provides a shared foundation and is intended to be completed in full.</li>
-<li>Advanced Topics are optional; learners are encouraged to select one area of focus and complete all courses within that topic.</li>
-</ul>
-<p>Practical work is integrated through the <a href="projects.html">Projects section</a> and may be undertaken alongside coursework.</p>
-<p>Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
-they belong in <a href="extras/courses.html">extras/courses</a>, <a href="extras/readings.html">extras/readings</a>.</p>
-<p><strong><a href="/CONTRIBUTING.html">How to contribute</a></strong></p>
-<h1 id="communities">Communities</h1>
+<h3 id="communities">Communities</h3>
 <ul>
 <li>Forums:<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://thephilosophyforum.com/">The Philosophy Forum</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://onlinephilosophyclub.com/forums/">Online Philosophy Club</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://forum.philosophynow.org/">Philosophy Now Forum</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://philosophy.stackexchange.com/">Philosophy Stack Exchange</a></li>
+<li><a href="https://thephilosophyforum.com/" target="_blank" rel="noopener noreferrer">The Philosophy Forum</a></li>
+<li><a href="https://onlinephilosophyclub.com/forums/" target="_blank" rel="noopener noreferrer">Online Philosophy Club</a></li>
+<li><a href="https://forum.philosophynow.org/" target="_blank" rel="noopener noreferrer">Philosophy Now Forum</a></li>
+<li><a href="https://philosophy.stackexchange.com/" target="_blank" rel="noopener noreferrer">Philosophy Stack Exchange</a></li>
 </ul>
 </li>
 <li>Subreddits:<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/epistemology/">r/epistemology</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/askphilosophy/">r/askphilosophy</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/philosophy/">r/philosophy</a></li>
+<li><a href="https://www.reddit.com/r/epistemology/" target="_blank" rel="noopener noreferrer">r/epistemology</a></li>
+<li><a href="https://www.reddit.com/r/askphilosophy/" target="_blank" rel="noopener noreferrer">r/askphilosophy</a></li>
+<li><a href="https://www.reddit.com/r/philosophy/" target="_blank" rel="noopener noreferrer">r/philosophy</a></li>
 </ul>
 </li>
 <li>Discord servers:<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/philosophy">The Philosophy Chat</a></li>
+<li><a href="https://discord.gg/philosophy" target="_blank" rel="noopener noreferrer">The Philosophy Chat</a></li>
 </ul>
 </li>
-<li>You can also interact through <a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/epistemology/issues">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
-<li>
-<p>Join our Discord server (for discussions around this and other curricula): </p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/KHqAv4Nvm5"><img alt="discord link" src="/assets/discord.png" /></a></p>
-</li>
+<li>You can also interact through <a href="https://github.com/hocbigg/epistemology/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
 </ul>
-<h1 id="curriculum">Curriculum</h1>
-<ul>
-<li><a href="#foundational-tools-for-epistemology">Foundational Tools for Epistemology</a></li>
-<li><a href="#core-epistemology-knowledge-and-belief">Core Epistemology: Knowledge and Belief</a></li>
-<li><a href="#sources-and-structure-of-justification">Sources and Structure of Justification</a></li>
-<li><a href="#skepticism-and-epistemic-limits">Skepticism and Epistemic Limits</a></li>
-</ul>
-<h2 id="how-to-use-this-curriculum">How to use this curriculum</h2>
-<h3 id="core-sections">Core Sections</h3>
-<p>The following sections form the essential backbone of epistemology. Study them <strong>in this exact order</strong>:</p>
-<p><strong>Foundational Tools for Epistemology</strong></p>
-<p><strong>Core Epistemology: Knowledge and Belief</strong></p>
-<p><strong>Sources and Structure of Justification</strong></p>
-<p><strong>Skepticism and Epistemic Limits</strong></p>
-<p>These four sections give you the central questions, classic debates, and basic conceptual vocabulary that almost every serious discussion in epistemology builds upon.</p>
-<h2 id="foundational-tools-for-epistemology">Foundational Tools for Epistemology</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book/Text</th>
-<th>Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. Introduction to Philosophy</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/philosophyessent00nige">Philosophy: The Basics – Nigel Warburton</a></strong></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://mitxonline.mit.edu/courses/course-v1:MITxT+24.00x/">Introduction to Philosophy: God, Knowledge and Consciousness – MITx (edX)</a></strong></td>
-</tr>
-<tr>
-<td>2. Logic and Argumentation</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://forallx.openlogicproject.org/">forall x: An Introduction to Formal Logic (Open Textbook)</a></strong></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/24-241-logic-i-fall-2005/">Logic I – MIT OpenCourseWare</a></strong></td>
-</tr>
-<tr>
-<td>3. Critical Thinking and Reason Evaluation</td>
-<td></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.futurelearn.com/courses/logical-and-critical-thinking">Logical and Critical Thinking – University of Auckland (FutureLearn)</a></strong></td>
-</tr>
-</tbody>
-</table>
-<h2 id="core-epistemology-knowledge-and-belief">Core Epistemology: Knowledge and Belief</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book/Text</th>
-<th>Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>4. What Is Knowledge?</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/knowledge-how/">SEP: “Knowledge”</a></strong> (note: main epistemology entry links to related; see also "The Analysis of Knowledge")</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/24-211-theory-of-knowledge-spring-2014/">Theory of Knowledge – MIT OpenCourseWare</a></strong></td>
-</tr>
-<tr>
-<td>5. The Analysis of Knowledge</td>
-<td>- <strong><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/knowledge-analysis/">SEP: “The Analysis of Knowledge”</a></strong><br/>- <a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/archIves/win2013/entries/knowledge-analysis/"><strong>Gettier, JTB, and Post-Gettier Theories</strong></a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="sources-and-structure-of-justification">Sources and Structure of Justification</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book/Text</th>
-<th>Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>6. Sources of Knowledge</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/sources-knowledge/">SEP: “Sources of Knowledge”</a></strong> (including: Perception, Memory, Reason, Testimony)</td>
-<td></td>
-</tr>
-<tr>
-<td>7. Epistemic Justification</td>
-<td>- <strong><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/justification/">SEP: “Epistemic Justification”</a></strong><br/>- <a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/reliabilism/"><em>SEP: Reliabilist Epistemology</em></a><br/>- <a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/epistemology-virtue/"><em>SEP: Virtue Epistemology</em></a></td>
-<td></td>
-</tr>
-<tr>
-<td>8. Epistemic Norms and Rational Belief</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/epistemic-norms/">SEP: “Epistemic Norms”</a></strong></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="skepticism-and-epistemic-limits">Skepticism and Epistemic Limits</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book/Text</th>
-<th>Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>9. Skepticism</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/skepticism/">SEP: “Skepticism”</a></strong> (Cartesian, Inductive, and Contemporary Forms)</td>
-<td></td>
-</tr>
-<tr>
-<td>10. Responses to Skepticism</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="https://iep.utm.edu/contextualism-in-epistemology/">IEP: Contextualism</a><br/>- <a target="_blank" rel="noopener noreferrer" href="https://iep.utm.edu/fallibil/">IEP: Fallibilism</a><br/>- <a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/knowledge-analysis/">SEP: The Analysis of Knowledge</a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h1 id="code-of-conduct">Code of conduct</h1>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/code-of-conduct">Hocbigg's code of conduct</a>.</p>
-</article>
-</main>
+<h2 id="curriculum">Curriculum</h2>
+<h3 id="philosophical-reasoning-and-argument-analysis">Philosophical Reasoning and Argument Analysis</h3>
+<p>Covers the fundamental principles of deductive and inductive logic, argument reconstruction, validity, soundness, and informal fallacies necessary for evaluating philosophical claims.</p>
+<p><a href="https://www.khanacademy.org/partner-content/wi-phi/wiphi-critical-thinking" target="_blank" rel="noopener noreferrer">Critical Thinking: Fundamentals (Wireless Philosophy / Khan Academy)</a> - The recommended starting point for beginners; delivers interactive, bite-sized video lessons on deductive validity, inductive strength, and premise-conclusion reconstruction.</p>
+<p><a href="https://forallx.openlogicproject.org/" target="_blank" rel="noopener noreferrer">forall x: An Introduction to Formal Logic (P.D. Magnus &amp; Tim Button)</a> - A formal, open-access textbook alternative to the video series above, best suited for learners who prefer symbolic notation, truth tables, and formal proofs.</p>
+<p><a href="https://books.google.com/books?isbn=9780495810957" target="_blank" rel="noopener noreferrer">Attacking Faulty Reasoning (T. Edward Damer)</a> - Complements the logic foundations above by providing an applied catalog of informal fallacies and practical strategies for critiquing flawed philosophical arguments.</p>
+<h3 id="the-definition-and-analysis-of-knowledge">The Definition and Analysis of Knowledge</h3>
+<p>Examines propositional knowledge, the traditional tripartite definition of knowledge as justified true belief (JTB), the Gettier counterexamples, and post-Gettier attempts to define knowledge.</p>
+<p><a href="https://books.google.com/books?isbn=9780199661268" target="_blank" rel="noopener noreferrer">Knowledge: A Very Short Introduction (Jennifer Nagel)</a> - An accessible primer to read first; introduces the distinction between knowledge and belief, Gettier cases, and contemporary intuitions in under 150 pages.</p>
+<p><a href="https://books.google.com/books?isbn=9781032410692" target="_blank" rel="noopener noreferrer">What is this thing called Knowledge? (Duncan Pritchard)</a> - A comprehensive textbook alternative to Nagel above (focusing on Part I), offering more detailed treatments of tripartite conditions, sensitivity, and safety.</p>
+<p><a href="https://www.ditext.com/gettier/gettier.html" target="_blank" rel="noopener noreferrer">Is Justified True Belief Knowledge? (Edmund Gettier / DiText)</a> - The landmark three-page primary paper to read directly alongside either textbook above, demonstrating through counterexamples why justified true belief is insufficient for knowledge.</p>
+<p><a href="https://www.youtube.com/playlist?list=PLtKNX4SfKpzUxuye9OdaRfL5fbpGa3bH5" target="_blank" rel="noopener noreferrer">Epistemology: Introduction to Theory of Knowledge (Wireless Philosophy / Jennifer Nagel)</a> - An audiovisual companion to the readings; these animated short lectures illustrate Gettier cases and causal/tracking theories for learners who prefer video explanations.</p>
+<p><a href="https://ocw.mit.edu/courses/24-211-theory-of-knowledge-spring-2014/" target="_blank" rel="noopener noreferrer">Theory of Knowledge (MIT OpenCourseWare / Declan Smithies)</a> - University course material that complements the readings with downloadable lecture notes, reading questions, and self-study essay topics.</p>
+<h3 id="sources-of-epistemic-justification">Sources of Epistemic Justification</h3>
+<p>Explores how cognitive agents acquire justified beliefs through perception, memory, introspection, reason (a priori knowledge), and testimony.</p>
+<p><a href="https://books.google.com/books?isbn=9781032410692" target="_blank" rel="noopener noreferrer">What is this thing called Knowledge? (Duncan Pritchard)</a> - Start with Part II of this core textbook for an introductory, student-friendly breakdown of perception, testimony, memory, and the rationalism-versus-empiricism debate.</p>
+<p><a href="https://books.google.com/books?isbn=9780415879231" target="_blank" rel="noopener noreferrer">Epistemology: A Contemporary Introduction to the Theory of Knowledge (Robert Audi)</a> - A rigorous, advanced alternative to Pritchard above; Part I provides an exhaustive, faculty-by-faculty investigation of perceptual, introspective, and testimonial justification.</p>
+<p><a href="https://www.youtube.com/playlist?list=PL8Nxd4OXpzqnK97Go28_2MlmnCQIi3wDv" target="_blank" rel="noopener noreferrer">Epistemology Lecture Series (Victor Gijsbers / Leiden University)</a> - An open video lecture series to watch alongside either textbook; lectures 12 through 19 walk through perception, a priori knowledge, and testimonial transmission with concrete blackboard examples.</p>
+<h3 id="the-structure-of-justification">The Structure of Justification</h3>
+<p>Investigates the epistemic regress problem and evaluates the main structural architectures of epistemic justification, primarily foundationalism, coherentism, and infinitism.</p>
+<p><a href="https://books.google.com/books?isbn=9781032410692" target="_blank" rel="noopener noreferrer">What is this thing called Knowledge? (Duncan Pritchard)</a> - Read the chapters on justification structure for a clear, accessible introduction to the regress problem, basic beliefs, and the coherentist web of belief.</p>
+<p><a href="https://books.google.com/books?isbn=9780415879231" target="_blank" rel="noopener noreferrer">Epistemology: A Contemporary Introduction to the Theory of Knowledge (Robert Audi)</a> - A more detailed, conceptually demanding alternative to Pritchard above; Part II dissects modest foundationalism, coherentist circularity objections, and infinite regress.</p>
+<p><a href="https://www.youtube.com/playlist?list=PL8Nxd4OXpzqnK97Go28_2MlmnCQIi3wDv" target="_blank" rel="noopener noreferrer">Epistemology Lecture Series (Victor Gijsbers / Leiden University)</a> - Complements the readings by visually mapping Agrippa's trilemma and the structural clash between foundationalism and coherentism across lectures 3 through 9.</p>
+<h3 id="theories-of-justification-and-warrant">Theories of Justification and Warrant</h3>
+<p>Examines major theoretical approaches to what makes a belief justified or warranted, focusing on internalism versus externalism, reliabilism, and virtue epistemology.</p>
+<p><a href="https://books.google.com/books?isbn=9781032410692" target="_blank" rel="noopener noreferrer">What is this thing called Knowledge? (Duncan Pritchard)</a> - The foundational textbook reading for this subject; introduces accessibility internalism, process reliabilism, and virtue epistemology in clear, introductory prose.</p>
+<p><a href="https://books.google.com/books?isbn=9780415879231" target="_blank" rel="noopener noreferrer">Epistemology: A Contemporary Introduction to the Theory of Knowledge (Robert Audi)</a> - An advanced alternative to Pritchard above; delves deeply into internalist mentalism, externalist causal grounds, and the normative status of epistemic justification.</p>
+<p><a href="https://www.youtube.com/playlist?list=PLtKNX4SfKpzUxuye9OdaRfL5fbpGa3bH5" target="_blank" rel="noopener noreferrer">Epistemology: Introduction to Theory of Knowledge (Wireless Philosophy / Geoff Pynn)</a> - A quick video primer to watch before reading; explains the intuitive divide between internalist access and externalist reliabilist mechanisms in short visual segments.</p>
+<p><a href="https://www.youtube.com/playlist?list=PL8Nxd4OXpzqnK97Go28_2MlmnCQIi3wDv" target="_blank" rel="noopener noreferrer">Epistemology Lecture Series (Victor Gijsbers / Leiden University)</a> - A comprehensive lecture sequence to use alongside or after the readings; systematically evaluates reliabilism, Goldman's fake-barn examples, and virtue-theoretic solutions.</p>
+<h3 id="philosophical-skepticism">Philosophical Skepticism</h3>
+<p>Examines radical challenges to our claim to possess knowledge, including Pyrrhonian suspension of judgment, the Agrippan trilemma, and Cartesian external-world skepticism.</p>
+<p><a href="https://www.earlymoderntexts.com/assets/pdfs/descartes1641.pdf" target="_blank" rel="noopener noreferrer">Meditations on First Philosophy (René Descartes)</a> - The indispensable primary text to read first; Meditations I and II present the classic arguments for radical doubt through sensory fallibility, dreaming, and the evil demon.</p>
+<p><a href="https://books.google.com/books?isbn=9781032410692" target="_blank" rel="noopener noreferrer">What is this thing called Knowledge? (Duncan Pritchard)</a> - Provides modern analytical commentary on the primary readings above, formalizing Cartesian skepticism, epistemic closure principles, and underdetermination.</p>
+<p><a href="https://www.coursera.org/learn/skepticism" target="_blank" rel="noopener noreferrer">Skepticism (UC Irvine / Duncan Pritchard)</a> - An interactive, audit-free MOOC that serves as a structured audiovisual alternative or companion to the textbook chapters on radical skepticism.</p>
+<p><a href="https://www.youtube.com/playlist?list=PL8Nxd4OXpzqnK97Go28_2MlmnCQIi3wDv" target="_blank" rel="noopener noreferrer">Epistemology Lecture Series (Victor Gijsbers / Leiden University)</a> - University video lectures that complement the course above, exploring ancient Pyrrhonian skepticism and suspension of judgment alongside modern Cartesian scenarios.</p>
+<h3 id="responses-to-skepticism">Responses to Skepticism</h3>
+<p>Evaluates major philosophical attempts to resolve or dissolve skeptical arguments, including Moorean dogmatism, semantic externalism, contextualism, and fallibilism.</p>
+<p><a href="https://archive.org/details/moore-george-edward-philosophical-papers" target="_blank" rel="noopener noreferrer">Proof of an External World (G. E. Moore / Internet Archive)</a> - The seminal primary text for common-sense dogmatism; read Moore's famous argument as the direct historical counterpoint to Descartes' radical doubt.</p>
+<p><a href="https://books.google.com/books?isbn=9780199661268" target="_blank" rel="noopener noreferrer">Knowledge: A Very Short Introduction (Jennifer Nagel)</a> - An accessible overview of modern anti-skeptical theories, clearly contrasting contextualist shifting standards with invariantist fallibilism.</p>
+<p><a href="https://www.coursera.org/learn/skepticism" target="_blank" rel="noopener noreferrer">Skepticism (UC Irvine / Duncan Pritchard)</a> - Continues from the previous subject as an audiovisual guide, evaluating Moorean responses, relevant alternatives, and contextualist frameworks.</p>
+<p><a href="https://ocw.mit.edu/courses/24-211-theory-of-knowledge-spring-2014/" target="_blank" rel="noopener noreferrer">Theory of Knowledge (MIT OpenCourseWare / Declan Smithies)</a> - University lecture notes and essay assignments that complement the readings, ideal for testing your ability to construct and critique anti-skeptical arguments.</p>
+    </article>
+  </main>
 
 </body>
 </html>
